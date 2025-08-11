@@ -9,7 +9,7 @@ from s3fs import S3FileSystem
 
 topic = 'test-topic'
 s3 = boto3.client('s3')
-s3fs = S3FileSystem()
+
 
 
 
