@@ -17,8 +17,6 @@ def produce(v):
 df = pd.read_csv('indexProcessed.csv')
 
 if __name__ == "__main__":
-    # Example usage of the producer
-    #produce(k='hello',v='world')
     while True:
             get_data = df.sample(1).to_dict(orient='records')[0]
             produce(v=get_data)
